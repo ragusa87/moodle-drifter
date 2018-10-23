@@ -1,0 +1,33 @@
+---
+# Name of your project, will also be the vagrant box name
+project_name: "moodle"
+
+# Main hostname through which the vagrant box will be accessible
+hostname: "moodle.lo"
+# Alternative hostnames through which you want to access the vagrant box
+hostnames: []
+
+# The box IP, this must be unique across all your virtualized projects to
+# avoid collisions. WARNING, this parameter will not guarantee that your box
+# will be accessible at this IP depending on your network configuration or
+# provider choice.
+box_ip: "10.10.10.13"
+
+# Name of the database to create for your project if you include the
+# MySQL or PostgreSQL role
+database_name: "moodle"
+
+# Root directory of your project for the webserver and other purposes
+root_directory: "/vagrant/"
+
+# PHP 7.0 required for Moodle 3.4
+php_version: 7.0
+
+# For a PHP project, you might want to set the following
+# Default reporting level of PHP errors
+php_error_reporting: "E_ALL & ~E_NOTICE"
+
+# Use a Stretch image
+box_name: "drifter/stretch64-base"
+box_url: "https://vagrantbox-public.liip.ch/drifter-stretch64-base.json"
+
